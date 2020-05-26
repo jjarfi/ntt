@@ -96,13 +96,13 @@ public class NTTApi {
 
     //cari Sejarah berdasarkan suku id
     @RequestMapping("/sejarah/suku/{id}")
-    public Collection<DaoSejarah> getSejarahSukuById(@PathVariable Integer id) {
+    public Collection<DaoSejarah> getSejarahSukuById(@PathVariable String id) {
         return sejarahService.findSuku(id);
     }
 
     //cari Pakaian berdasarkan suku id
     @RequestMapping("/pakaian/suku/{id}")
-    public Collection<DaoPakaian> getPakaianSukuById(@PathVariable Integer id) {
+    public Collection<DaoPakaian> getPakaianSukuById(@PathVariable String id) {
         return pakaianService.getPakaianBySukuId(id);
     }
 

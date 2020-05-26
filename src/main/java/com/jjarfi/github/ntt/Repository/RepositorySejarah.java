@@ -20,6 +20,6 @@ public interface RepositorySejarah extends PagingAndSortingRepository<DaoSejarah
 
 
 
-    List<DaoSejarah> findBySuku(int suku);
+    List<DaoSejarah> findBySuku(String suku);
 
 }

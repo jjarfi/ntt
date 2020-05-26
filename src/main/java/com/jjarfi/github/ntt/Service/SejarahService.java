@@ -38,7 +38,7 @@ public class SejarahService {
         return this.reposejarah.findById(id);
     }
 
-    public List<DaoSejarah> findSuku(Integer suku) {
+    public List<DaoSejarah> findSuku(String suku) {
         return this.reposejarah.findBySuku(suku);
     }
 

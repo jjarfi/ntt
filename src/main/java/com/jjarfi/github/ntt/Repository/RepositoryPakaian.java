@@ -13,7 +13,7 @@ public interface RepositoryPakaian extends PagingAndSortingRepository<DaoPakaian
     @Override
     List<DaoPakaian> findAll();
 
-    List<DaoPakaian> findBySuku(int suku);
+    List<DaoPakaian> findBySuku(String suku);
 
     @Override
     Optional<DaoPakaian> findById(String id);

@@ -27,7 +27,7 @@ public class PakaianService {
 
 
     //Get Semua data pakaian adat
-    public List<DaoPakaian> getPakaianBySukuId(Integer suku) {
+    public List<DaoPakaian> getPakaianBySukuId(String suku) {
         return this.repopakaian.findBySuku(suku);
     }
 
