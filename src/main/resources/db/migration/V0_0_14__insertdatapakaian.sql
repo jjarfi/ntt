@@ -1,9 +1,0 @@
---INSERT INTO pakaian
---(id, nm_pakaian, deskripsi, link, createdate, createdby, suku)
---VALUES(1,'Baju Tenun', 'Baju tenun ntt merupakan baju asli buatan masyarakat ntt yang berasal dari suku','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
---INSERT INTO pakaian
---(id, nm_pakaian, deskripsi, link, createdate, createdby, suku)
---VALUES(2,'Baju Kebaya', 'Baju kebaya ntt merupakan baju asli buatan masyarakat ntt yang berasal dari suku','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
---INSERT INTO pakaian
---(id, nm_pakaian, deskripsi, link, createdate, createdby, suku)
---VALUES(3,'Baju Batik', 'Baju batik ntt merupakan baju asli buatan masyarakat ntt yang berasal dari suku','http://192.168.43.224:8000/wall.jpg',Now(),1,1);

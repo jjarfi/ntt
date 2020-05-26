@@ -1,26 +1,28 @@
 package com.jjarfi.github.ntt.Model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
 @Entity
 @Table(name = "suku")
 public class DaoSuku {
-
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    private String id;
     @Column(name = "nm_suku")
     private String namasuku;
     private String deskripsi;
     private String link;
     private Timestamp createdate;
-    private int createdby;
+    private String createdby;
 
     public DaoSuku() {
     }
 
-    public DaoSuku(Long id, String namasuku, String deskripsi, String link, Timestamp createdate, int createdby) {
+    public DaoSuku(String id, String namasuku, String deskripsi, String link, Timestamp createdate, String createdby) {
         this.id = id;
         this.namasuku = namasuku;
         this.deskripsi = deskripsi;
@@ -29,11 +31,11 @@ public class DaoSuku {
         this.createdby = createdby;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -69,11 +71,11 @@ public class DaoSuku {
         this.createdate = createdate;
     }
 
-    public int getCreatedby() {
+    public String getCreatedby() {
         return createdby;
     }
 
-    public void setCreatedby(int createdby) {
+    public void setCreatedby(String createdby) {
         this.createdby = createdby;
     }
 }

@@ -1,5 +1,7 @@
 package com.jjarfi.github.ntt.Model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 
@@ -8,20 +10,21 @@ import java.sql.Timestamp;
 public class DaoMusik {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private Long id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    private String id;
     @Column(name = "nm_musik")
     private String namamusik;
     private String deskripsi;
     private String link;
     private Timestamp createdate;
-    private int createdby;
-    private int suku;
+    private String createdby;
+    private String suku;
 
     public DaoMusik() {
     }
 
-    public DaoMusik(Long id, String namamusik, String deskripsi, String link, Timestamp createdate, int createdby, int suku) {
+    public DaoMusik(String id, String namamusik, String deskripsi, String link, Timestamp createdate, String createdby, String suku) {
         this.id = id;
         this.namamusik = namamusik;
         this.deskripsi = deskripsi;
@@ -31,11 +34,11 @@ public class DaoMusik {
         this.suku = suku;
     }
 
-    public Long getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -71,19 +74,19 @@ public class DaoMusik {
         this.createdate = createdate;
     }
 
-    public int getCreatedby() {
+    public String getCreatedby() {
         return createdby;
     }
 
-    public void setCreatedby(int createdby) {
+    public void setCreatedby(String createdby) {
         this.createdby = createdby;
     }
 
-    public int getSuku() {
+    public String getSuku() {
         return suku;
     }
 
-    public void setSuku(int suku) {
+    public void setSuku(String suku) {
         this.suku = suku;
     }
 }

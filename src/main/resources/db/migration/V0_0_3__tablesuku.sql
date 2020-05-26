@@ -1,10 +1,10 @@
 create table suku (
-id INT (5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ id VARCHAR (200) NOT NULL PRIMARY KEY,
 nm_suku VARCHAR (30) NOT NULL UNIQUE,
 deskripsi TEXT ,
 link TEXT,
 createdate TIMESTAMP,
-createdby INT (5) NOT NULL,
+createdby VARCHAR (200) NOT NULL,
 FOREIGN KEY (createdby) REFERENCES admin (id)
 ON UPDATE CASCADE
 ON DELETE CASCADE);

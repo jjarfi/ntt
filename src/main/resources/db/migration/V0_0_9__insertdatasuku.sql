@@ -1,3 +1,0 @@
---INSERT INTO suku
---(id, nm_suku, deskripsi, link, createdate, createdby)
---VALUES(1,'Sikka', 'Suku Sikka merupakan salah satu suku yang menempati pulau rote yang berbatasan dengan pula komodo','https://sultansinindonesieblog.files.wordpress.com/2019/03/1si-1.jpg',Now(),1);
