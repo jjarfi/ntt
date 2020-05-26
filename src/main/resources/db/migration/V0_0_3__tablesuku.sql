@@ -1,4 +1,4 @@
-CREATE TABLE suku (
+create table suku (
 id INT (5) NOT NULL PRIMARY KEY AUTO_INCREMENT,
 nm_suku VARCHAR (30) NOT NULL UNIQUE,
 deskripsi TEXT ,
