@@ -5,6 +5,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("sejarah")
 public interface RepositorySejarah extends PagingAndSortingRepository<DaoSejarah, String> {
@@ -14,7 +15,8 @@ public interface RepositorySejarah extends PagingAndSortingRepository<DaoSejarah
 
     DaoSejarah findByNamasejarah(String namasejarah);
 
-    DaoSejarah findById(Long id);
+    @Override
+    Optional<DaoSejarah> findById(String id);
 
 
 

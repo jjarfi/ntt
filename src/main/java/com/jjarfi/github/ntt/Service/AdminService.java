@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AdminService {
@@ -26,7 +27,7 @@ public class AdminService {
         return repoadmin.findByNama(nama);
     }
 
-    public DaoAdmin getId(Long id) {
+    public Optional<DaoAdmin> getId(String id) {
         return repoadmin.findById(id);
     }
 }

@@ -6,6 +6,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("musik")
 public interface RepositoryMusik extends PagingAndSortingRepository<DaoMusik, String> {
@@ -17,6 +18,7 @@ public interface RepositoryMusik extends PagingAndSortingRepository<DaoMusik, St
 
     List<DaoMusik> findBySuku(int suku);
 
-    DaoMusik findById(Long id);
+    @Override
+    Optional<DaoMusik> findById(String id);
 
 }

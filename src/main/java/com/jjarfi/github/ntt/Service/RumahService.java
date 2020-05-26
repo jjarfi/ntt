@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class RumahService {
@@ -36,10 +37,10 @@ public class RumahService {
         reporumah.save(rumah);
     }
 
-    public DaoRumah getId(Long id){
+    public Optional<DaoRumah> getId(String id){
         return reporumah.findById(id);
     }
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeleteRumah.deleteById(id);
     }
 }

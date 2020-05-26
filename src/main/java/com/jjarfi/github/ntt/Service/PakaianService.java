@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PakaianService {
@@ -39,10 +40,10 @@ public class PakaianService {
     public void save(DaoPakaian pakaian) {
         repopakaian.save(pakaian);
     }
-    public DaoPakaian getId(Long id){
+    public Optional<DaoPakaian> getId(String id){
         return repopakaian.findById(id);
     }
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeletePakaian.deleteById(id);
     }
 

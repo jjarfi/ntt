@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Controller
 public class SejarahController {
@@ -69,8 +70,8 @@ public class SejarahController {
     }
 
     @RequestMapping("/sejarah/edit/{id}")
-    public String getShowEdit(@PathVariable(name = "id") Long id, DaoSuku suku, ModelMap modelMap){
-        DaoSejarah daoSejarah = sejarahService.getId(id);
+    public String getShowEdit(@PathVariable(name = "id") String id, DaoSuku suku, ModelMap modelMap){
+        Optional<DaoSejarah> daoSejarah = sejarahService.getId(id);
         modelMap.addAttribute("selectSuku", sukuService.getAllSuku());
         modelMap.addAttribute("suku", suku);
         modelMap.addAttribute("sejarah", daoSejarah );
@@ -83,7 +84,7 @@ public class SejarahController {
         return "edit-sejarah";
     }
     @RequestMapping("/sejarah/delete/{id}")
-    public String deleteSejarah(@PathVariable Long id){
+    public String deleteSejarah(@PathVariable String id){
         sejarahService.delete(id);
         return "redirect:/sejarah";
     }

@@ -70,7 +70,7 @@ public class TarianController {
     }
 
     @RequestMapping("/tarian/edit/{id}")
-    public String getShowEdit(@PathVariable(name = "id") Long id, DaoSuku suku, ModelMap modelMap){
+    public String getShowEdit(@PathVariable(name = "id") String id, DaoSuku suku, ModelMap modelMap){
         DaoTarian daoTarian = tarianService.getId(id);
         modelMap.addAttribute("selectSuku", sukuService.getAllSuku());
         modelMap.addAttribute("suku", suku);
@@ -86,7 +86,7 @@ public class TarianController {
     }
 
     @RequestMapping("/tarian/delete/{id}")
-    public String deleteTarian(@PathVariable Long id){
+    public String deleteTarian(@PathVariable String id){
         tarianService.delete(id);
         return "redirect:/tarian";
     }

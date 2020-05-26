@@ -5,6 +5,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("rumah")
 public interface RepositoryRumah extends PagingAndSortingRepository<DaoRumah, String> {
@@ -14,5 +15,6 @@ public interface RepositoryRumah extends PagingAndSortingRepository<DaoRumah, St
 
     List<DaoRumah> findBySuku(int suku);
 
-    DaoRumah findById(Long id);
+    @Override
+    Optional<DaoRumah> findById(String id);
 }

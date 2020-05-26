@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MusikService {
@@ -38,11 +39,11 @@ public class MusikService {
     public void save(DaoMusik musik) {
         repomusik.save(musik);
     }
-    public DaoMusik getId(Long id){
+    public Optional<DaoMusik> getId(String id){
         return repomusik.findById(id);
     }
 
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeleteMusik.deleteById(id);
     }
 }

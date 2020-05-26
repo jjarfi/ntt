@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Optional;
+
 @Controller
 public class AdminSettingController {
 
@@ -48,9 +50,9 @@ public class AdminSettingController {
     }
 
     @RequestMapping("/home/admin/edit/{id}")
-    public ModelAndView getShowEdit(@PathVariable(name = "id") Long id) {
+    public ModelAndView getShowEdit(@PathVariable(name = "id") String id) {
         ModelAndView mv = new ModelAndView("profil");
-        DaoAdmin daoAdmin = adminService.getId(id);
+        Optional<DaoAdmin> daoAdmin = adminService.getId(id);
         mv.addObject("admin", daoAdmin);
         return mv;
     }

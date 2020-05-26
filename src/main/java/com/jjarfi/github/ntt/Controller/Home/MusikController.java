@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Controller
 public class MusikController {
@@ -69,8 +70,8 @@ public class MusikController {
     }
 
     @RequestMapping("/musik/edit/{id}")
-    public String getShowEdit(@PathVariable(name = "id") Long id, DaoSuku suku, ModelMap modelMap){
-        DaoMusik daoMusik = musikService.getId(id);
+    public String getShowEdit(@PathVariable(name = "id") String id, DaoSuku suku, ModelMap modelMap){
+        Optional<DaoMusik> daoMusik = musikService.getId(id);
         modelMap.addAttribute("selectSuku", sukuService.getAllSuku());
         modelMap.addAttribute("suku", suku);
         modelMap.addAttribute("musik", daoMusik );
@@ -84,7 +85,7 @@ public class MusikController {
     }
 
     @RequestMapping("/musik/delete/{id}")
-    public String deleteMusik(@PathVariable Long id){
+    public String deleteMusik(@PathVariable String id){
         musikService.delete(id);
         return "redirect:/musik";
     }

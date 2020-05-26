@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TarianService {
@@ -34,11 +35,11 @@ public class TarianService {
     public void save(DaoTarian tarian) {
         repotarian.save(tarian);
     }
-    public DaoTarian getId(Long id){
+    public Optional<DaoTarian> getId(String id){
         return repotarian.findById(id);
     }
 
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeleteTarian.deleteById(id);
     }
 }

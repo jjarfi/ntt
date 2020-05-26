@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/api")
@@ -89,7 +90,7 @@ public class NTTApi {
 
     //cari Sejarah berdasarkan Id
     @RequestMapping("/sejarah/id/{id}")
-    public DaoSejarah getSejarahById(@PathVariable Long id) {
+    public Optional<DaoSejarah> getSejarahById(@PathVariable String id) {
         return sejarahService.findSejarahById(id);
     }
 

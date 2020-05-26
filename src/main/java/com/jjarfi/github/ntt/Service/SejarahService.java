@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class SejarahService {
@@ -33,7 +34,7 @@ public class SejarahService {
     }
 
     //Cari sejarah berdasrkan id suku
-    public DaoSejarah findSejarahById(Long id) {
+    public Optional<DaoSejarah> findSejarahById(String id) {
         return this.reposejarah.findById(id);
     }
 
@@ -46,10 +47,10 @@ public class SejarahService {
         reposejarah.save(rumah);
     }
 
-    public DaoSejarah getId(Long id){
+    public Optional<DaoSejarah> getId(String id){
         return reposejarah.findById(id);
     }
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeleteSejarah.deleteById(id);
     }
 

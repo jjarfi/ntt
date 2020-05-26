@@ -6,6 +6,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("tarian")
 public interface RepositoryTarian extends PagingAndSortingRepository<DaoTarian, String> {
@@ -15,5 +16,6 @@ public interface RepositoryTarian extends PagingAndSortingRepository<DaoTarian, 
 
     List<DaoTarian> findBySuku(int suku);
 
-    DaoTarian findById(Long id);
+    @Override
+    Optional<DaoTarian> findById(String id);
 }

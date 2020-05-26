@@ -6,6 +6,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("repoadmin")
 public interface RepositoryAdmin extends PagingAndSortingRepository<DaoAdmin, String> {
@@ -16,7 +17,8 @@ public interface RepositoryAdmin extends PagingAndSortingRepository<DaoAdmin, St
 
     DaoAdmin findByUsername(String username);
 
-    DaoAdmin findById(Long id);
+    @Override
+    Optional<DaoAdmin> findById(String id);
 
     @Override
     List<DaoAdmin> findAll();

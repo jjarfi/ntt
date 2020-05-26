@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class MakananService {
@@ -45,11 +46,11 @@ public class MakananService {
     public void save(DaoMakanan makanan) {
             repomakan.save(makanan);
     }
-    public DaoMakanan getId(Long id){
+    public Optional<DaoMakanan> getId(String id){
         return repomakan.findById(id);
     }
 
-    public void delete(Long id) {
+    public void delete(String id) {
         this.repoDeleteMakanan.deleteById(id);
     }
 }

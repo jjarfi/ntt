@@ -5,6 +5,7 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("makanan")
 public interface RepositoryMakanan extends PagingAndSortingRepository<DaoMakanan, String> {
@@ -18,6 +19,7 @@ public interface RepositoryMakanan extends PagingAndSortingRepository<DaoMakanan
 
     List<DaoMakanan> findBySuku(Long suku);
 
-    DaoMakanan findById(Long id);
+    @Override
+    Optional<DaoMakanan> findById(String id);
 
 }
