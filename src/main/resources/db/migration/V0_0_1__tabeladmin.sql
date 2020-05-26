@@ -1,5 +1,5 @@
 create table admin (
-    id INT (5) NOT NULL PRIMARY KEY,
+    id VARCHAR (200) NOT NULL PRIMARY KEY,
     nama VARCHAR (30) NOT NULL UNIQUE,
     email VARCHAR (30) NOT NULL UNIQUE,
     no_hp VARCHAR (12) NOT NULL UNIQUE,

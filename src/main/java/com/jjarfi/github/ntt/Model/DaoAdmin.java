@@ -1,5 +1,7 @@
 package com.jjarfi.github.ntt.Model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 
 @Entity
@@ -7,8 +9,9 @@ import javax.persistence.*;
 public class DaoAdmin {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
-    private int id;
+    @GenericGenerator(name = "uuid", strategy = "uuid2")
+    @GeneratedValue(generator = "uuid")
+    private String id;
     private String nama;
     private String email;
     @Column(name = "no_hp")
@@ -21,7 +24,7 @@ public class DaoAdmin {
 
     }
 
-    public DaoAdmin(int id, String nama, String email, String nohp, Boolean status, String username, String password) {
+    public DaoAdmin(String id, String nama, String email, String nohp, Boolean status, String username, String password) {
         this.id = id;
         this.nama = nama;
         this.email = email;
@@ -31,11 +34,11 @@ public class DaoAdmin {
         this.password = password;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
