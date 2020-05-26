@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Controller
 public class TarianController {
@@ -71,7 +72,7 @@ public class TarianController {
 
     @RequestMapping("/tarian/edit/{id}")
     public String getShowEdit(@PathVariable(name = "id") String id, DaoSuku suku, ModelMap modelMap){
-        DaoTarian daoTarian = tarianService.getId(id);
+        Optional<DaoTarian> daoTarian = tarianService.getId(id);
         modelMap.addAttribute("selectSuku", sukuService.getAllSuku());
         modelMap.addAttribute("suku", suku);
         modelMap.addAttribute("tarian", daoTarian );
