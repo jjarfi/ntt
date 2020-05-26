@@ -64,7 +64,7 @@ public class PakaianController {
     @PostMapping("/pakaian/save")
     public String getSave(DaoPakaian pakaian) {
         pakaian.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        pakaian.setCreatedby(1);
+        pakaian.setCreatedby("1");
         pakaianService.save(pakaian);
         return "redirect:/pakaian";
     }

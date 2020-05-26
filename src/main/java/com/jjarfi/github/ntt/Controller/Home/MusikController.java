@@ -63,7 +63,7 @@ public class MusikController {
     @PostMapping("/musik/save")
     public String getSave( DaoMusik musik) {
         musik.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        musik.setCreatedby(1);
+        musik.setCreatedby("1");
         musikService.save(musik);
         return "redirect:/musik";
     }

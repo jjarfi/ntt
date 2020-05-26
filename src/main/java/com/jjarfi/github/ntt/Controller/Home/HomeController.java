@@ -65,7 +65,7 @@ public class HomeController {
     @PostMapping("/home/save")
     public String getSave(DaoSuku suku) {
         suku.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        suku.setCreatedby(1);
+        suku.setCreatedby("1");
         sukuService.save(suku);
         return "redirect:/home";
     }

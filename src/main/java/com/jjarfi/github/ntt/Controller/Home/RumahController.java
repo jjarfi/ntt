@@ -63,7 +63,7 @@ public class RumahController {
     @PostMapping("/rumah/save")
     public String getSave(DaoRumah rumah) {
         rumah.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        rumah.setCreatedby(1);
+        rumah.setCreatedby("1");
         rumahService.save(rumah);
         return "redirect:/rumah";
     }

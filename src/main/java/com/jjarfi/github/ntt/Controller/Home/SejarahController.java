@@ -63,7 +63,7 @@ public class SejarahController {
     @PostMapping("/sejarah/save")
     public String getSave(DaoSejarah sejarah) {
         sejarah.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        sejarah.setCreatedby(1);
+        sejarah.setCreatedby("1");
         sejarahService.save(sejarah);
         return "redirect:/sejarah";
     }

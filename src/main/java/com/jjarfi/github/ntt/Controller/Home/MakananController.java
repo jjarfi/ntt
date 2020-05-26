@@ -64,7 +64,7 @@ public class MakananController {
     @PostMapping("/makanan/save")
     public String getSave( DaoMakanan makanan) {
         makanan.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        makanan.setCreatedby(1);
+        makanan.setCreatedby("1");
         makananService.save(makanan);
         return "redirect:/makanan";
     }

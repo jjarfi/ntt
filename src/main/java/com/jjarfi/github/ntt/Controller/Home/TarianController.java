@@ -64,7 +64,7 @@ public class TarianController {
     @PostMapping("/tarian/save")
     public String getSave( DaoTarian tarian) {
         tarian.setCreatedate(Timestamp.valueOf(LocalDateTime.now()));
-        tarian.setCreatedby(1);
+        tarian.setCreatedby("1");
         tarianService.save(tarian);
         return "redirect:/tarian";
     }
