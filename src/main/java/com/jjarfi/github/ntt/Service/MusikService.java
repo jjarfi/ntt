@@ -27,7 +27,7 @@ public class MusikService {
     }
 
     //Get All Musik By Suku Id
-    public List<DaoMusik> getMusikSukuById(Integer suku) {
+    public List<DaoMusik> getMusikSukuById(String suku) {
         return this.repomusik.findBySuku(suku);
     }
 

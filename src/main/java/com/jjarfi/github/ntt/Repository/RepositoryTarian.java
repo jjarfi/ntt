@@ -14,7 +14,7 @@ public interface RepositoryTarian extends PagingAndSortingRepository<DaoTarian, 
     @Override
     List<DaoTarian> findAll();
 
-    List<DaoTarian> findBySuku(int suku);
+    List<DaoTarian> findBySuku(String suku);
 
     @Override
     Optional<DaoTarian> findById(String id);

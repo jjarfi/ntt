@@ -28,7 +28,7 @@ public class TarianService {
         return this.repotarian.count();
     }
     //get All tarian Suku By Id
-    public List<DaoTarian> getTarianSukuById(Integer suku) {
+    public List<DaoTarian> getTarianSukuById(String suku) {
         return this.repotarian.findBySuku(suku);
     }
     //Save

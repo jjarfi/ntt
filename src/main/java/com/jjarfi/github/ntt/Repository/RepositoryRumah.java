@@ -13,7 +13,7 @@ public interface RepositoryRumah extends PagingAndSortingRepository<DaoRumah, St
     @Override
     List<DaoRumah> findAll();
 
-    List<DaoRumah> findBySuku(int suku);
+    List<DaoRumah> findBySuku(String suku);
 
     @Override
     Optional<DaoRumah> findById(String id);

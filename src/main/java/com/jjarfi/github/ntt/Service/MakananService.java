@@ -33,8 +33,8 @@ public class MakananService {
     }
 
     //Menampilakan semua manakan
-    public List<DaoMakanan> getMakananSukuById(Long suku) {
-        return this.repomakan.findBySuku(suku);
+    public List<DaoMakanan> getMakananSukuById(String suku) {
+        return this.repomakan.findBySukuBy(suku);
     }
 
     //Get Total Makanan

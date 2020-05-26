@@ -16,7 +16,7 @@ public interface RepositoryMusik extends PagingAndSortingRepository<DaoMusik, St
 
     DaoMusik findByNamamusik(String nama);
 
-    List<DaoMusik> findBySuku(int suku);
+    List<DaoMusik> findBySuku(String suku);
 
     @Override
     Optional<DaoMusik> findById(String id);

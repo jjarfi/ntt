@@ -28,7 +28,7 @@ public class RumahService {
     }
 
     //Get Semua data rumah adat berdasrkan suku
-    public List<DaoRumah> getRumahSukuByid(Integer suku) {
+    public List<DaoRumah> getRumahSukuByid(String suku) {
         return this.reporumah.findBySuku(suku);
     }
 

@@ -108,25 +108,25 @@ public class NTTApi {
 
     //cari Rumah berdasarkan suku id
     @RequestMapping("/rumah/suku/{id}")
-    public Collection<DaoRumah> getRumahSukuById(@PathVariable Integer id) {
+    public Collection<DaoRumah> getRumahSukuById(@PathVariable String id) {
         return rumahService.getRumahSukuByid(id);
     }
 
     //cari Makanan berdasarkan suku id
     @RequestMapping("/makanan/suku/{id}")
-    public Collection<DaoMakanan> getMakananSukuById(@PathVariable Long id) {
+    public Collection<DaoMakanan> getMakananSukuById(@PathVariable String id) {
         return makananService.getMakananSukuById(id);
     }
 
     //cari Musik berdasarkan suku id
     @RequestMapping("/musik/suku/{id}")
-    public Collection<DaoMusik> getMusikSukuById(@PathVariable Integer id) {
+    public Collection<DaoMusik> getMusikSukuById(@PathVariable String id) {
         return musikService.getMusikSukuById(id);
     }
 
     //cari Tarian berdasarkan suku id
     @RequestMapping("/tarian/suku/{id}")
-    public Collection<DaoTarian> getTarianSukuById(@PathVariable Integer id) {
+    public Collection<DaoTarian> getTarianSukuById(@PathVariable String id) {
         return tarianService.getTarianSukuById(id);
     }
 }
