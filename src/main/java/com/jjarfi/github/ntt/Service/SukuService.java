@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Transactional
@@ -46,7 +47,7 @@ public class SukuService {
     }
 
 
-    public DaoSuku getId(Long id){
+    public Optional<DaoSuku> getId(String id){
         return reposuku.findById(id);
     }
     public void delete(Long suku) {

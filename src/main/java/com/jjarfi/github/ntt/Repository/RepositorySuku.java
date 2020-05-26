@@ -6,6 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository("suku")
 public interface RepositorySuku extends JpaRepository<DaoSuku, String > {
@@ -16,5 +17,6 @@ public interface RepositorySuku extends JpaRepository<DaoSuku, String > {
 
   //  DaoSuku deleteById(Long id);
 
-    DaoSuku findById(Long id);
+    @Override
+    Optional<DaoSuku> findById(String id);
 }

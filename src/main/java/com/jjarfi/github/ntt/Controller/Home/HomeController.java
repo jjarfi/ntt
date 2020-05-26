@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Optional;
 
 @Controller
 @Transactional
@@ -71,8 +72,8 @@ public class HomeController {
     }
 
     @RequestMapping("/home/suku/edit/{id}")
-    public String getShowEdit(@PathVariable(name = "id") Long id, ModelMap modelMap){
-        DaoSuku daoSuku = sukuService.getId(id);
+    public String getShowEdit(@PathVariable(name = "id") String id, ModelMap modelMap){
+        Optional<DaoSuku> daoSuku = sukuService.getId(id);
         modelMap.addAttribute("suku", daoSuku);
         return "edit-suku";
     }
