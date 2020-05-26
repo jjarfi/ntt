@@ -1,0 +1,15 @@
+--INSERT INTO tarian
+--(id, nm_tarian, deskripsi, link, createdate, createdby, suku)
+--VALUES(1,'Tari Ofalanga', 'Tari Ofalangan merupakan','<iframe width="560" height="315" src="https://www.youtube.com/embed/OelheN_CJmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',Now(),1,1);
+--INSERT INTO tarian
+--(id, nm_tarian, deskripsi, link, createdate, createdby, suku)
+--VALUES(2,'Tari Bolelebo', 'Tari Bolelebo merupakan','<iframe width="560" height="315" src="https://www.youtube.com/embed/2hgvtF3jqFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',Now(),1,1);
+--INSERT INTO tarian
+--(id, nm_tarian, deskripsi, link, createdate, createdby, suku)
+--VALUES(3,'Tari Yospan', 'Tari Yospan merupakan','<iframe width="560" height="315" src="https://www.youtube.com/embed/RchmNRQ_r70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',Now(),1,1);
+--INSERT INTO tarian
+--(id, nm_tarian, deskripsi, link, createdate, createdby, suku)
+--VALUES(4,'Tari Piring', 'Tari Piring merupakan','<iframe width="560" height="315" src="https://www.youtube.com/embed/RchmNRQ_r70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',Now(),1,1);
+--INSERT INTO tarian
+--(id, nm_tarian, deskripsi, link, createdate, createdby, suku)
+--VALUES(5,'Tari Mambruk', 'Tari Mambruk merupakan','<iframe width="560" height="315" src="https://www.youtube.com/embed/RchmNRQ_r70" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',Now(),1,1);

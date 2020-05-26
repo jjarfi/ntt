@@ -1,0 +1,3 @@
+--INSERT INTO makanan
+--(id, nm_makanan, deskripsi, link, createdate, createdby, suku)
+--VALUES(5,'Kepiting Bakar ', 'Kepiting bakar NTT dibuat dengan menggunakan ... contoh saja','http://192.168.43.224:8000/wall.jpg',Now(),1,2);

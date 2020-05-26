@@ -1,0 +1,23 @@
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(1,'Sejarah Kelimutu', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);
+--
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(2,'Sejarah Komodo', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);
+--
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(3,'Sejarah Danau Tiga Warna', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);
+--
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(4,'Sejarah Sasondo', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);
+--
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(5,'Sejarah Ciremai', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);
+--
+--INSERT INTO sejarah
+--(id, nm_sejarah, deskripsi, link, createdate, createdby, suku)
+--VALUES(6,'Sejarah NTT', 'Gunung kelimutu merupakan salah satu gunung yang terdapat di pulau nusa tenggara timur','http://192.168.43.224:8000/wall.jpg',Now(),1, 1);

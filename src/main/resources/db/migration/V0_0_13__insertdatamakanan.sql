@@ -1,0 +1,16 @@
+--INSERT INTO makanan
+--(id, nm_makanan, deskripsi, link, createdate, createdby, suku)
+--VALUES(1,'Ayam Bakar', 'Ayam Bakar NTT dibuat dengan menggunakan ... contoh saja','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
+--
+--INSERT INTO makanan
+--(id, nm_makanan, deskripsi, link, createdate, createdby, suku)
+--VALUES(2,'Ikan Bakar', 'Ikan bakar NTT dibuat dengan menggunakan ... contoh saja','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
+--
+--INSERT INTO makanan
+--(id, nm_makanan, deskripsi, link, createdate, createdby, suku)
+--VALUES(3,'Udang Bakar', 'Udang Bakar NTT dibuat dengan menggunakan ... contoh saja','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
+--
+--INSERT INTO makanan
+--(id, nm_makanan, deskripsi, link, createdate, createdby, suku)
+--VALUES(4,'Kepiting Bakar ', 'Kepiting bakar NTT dibuat dengan menggunakan ... contoh saja','http://192.168.43.224:8000/wall.jpg',Now(),1,1);
+--

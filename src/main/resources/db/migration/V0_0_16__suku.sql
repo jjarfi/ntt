@@ -1,0 +1,4 @@
+--INSERT INTO suku
+--(id, nm_suku, deskripsi, link, createdate, createdby)
+--VALUES(2,'Lamaholot', 'Suku Lamaholot merupakan salah satu suku yang menempati pulau rote yang berbatasan dengan pula komodo','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHNbPXlpzV1ihiNdB_hpmiR_cEO4h6bHtKZdu22kMEkDWrlOqC&usqp=CAU',Now(),1);
+--

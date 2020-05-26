@@ -1,0 +1,15 @@
+CREATE TABLE sejarah (
+id INT (5) NOT NULL PRIMARY KEY,
+nm_sejarah VARCHAR (30) NOT NULL,
+deskripsi TEXT ,
+link TEXT,
+createdate TIMESTAMP,
+createdby INT (5) NOT NULL,
+FOREIGN KEY (createdby) REFERENCES admin (id)
+ON UPDATE CASCADE
+ON DELETE CASCADE,
+suku INT (5),
+FOREIGN KEY (suku) REFERENCES suku (id)
+ON UPDATE CASCADE
+ON DELETE CASCADE
+);
