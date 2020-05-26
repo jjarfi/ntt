@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository("repodeletesuku")
-public interface RepoDeleteSuku extends CrudRepository<DaoSuku, Long> {
+public interface RepoDeleteSuku extends CrudRepository<DaoSuku, String> {
 }

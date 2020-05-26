@@ -50,7 +50,7 @@ public class SukuService {
     public Optional<DaoSuku> getId(String id){
         return reposuku.findById(id);
     }
-    public void delete(Long suku) {
+    public void delete(String suku) {
          this.repoDeleteSuku.deleteById(suku);
     }
 }

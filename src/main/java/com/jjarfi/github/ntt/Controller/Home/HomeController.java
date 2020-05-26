@@ -79,7 +79,7 @@ public class HomeController {
     }
 
     @RequestMapping("/home/suku/delete/{id}")
-    public String deleteSuku(@PathVariable Long id){
+    public String deleteSuku(@PathVariable String id){
         sukuService.delete(id);
         return "redirect:/home";
     }
