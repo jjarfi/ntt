@@ -15,9 +15,9 @@ public interface RepositoryMakanan extends PagingAndSortingRepository<DaoMakanan
 
     DaoMakanan findByNamamakanan(String nama);
 
-    DaoMakanan findBySuku(String suku);
+    //DaoMakanan findBySuku(String suku);
 
-    List<DaoMakanan> findBySukuBy(String suku);
+    List<DaoMakanan> findBySuku(String suku);
 
     @Override
     Optional<DaoMakanan> findById(String id);
