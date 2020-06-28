@@ -44,6 +44,7 @@ public class RumahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "rumah";
     }
 
@@ -58,6 +59,7 @@ public class RumahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "tambah-rumah";
     }
 
@@ -81,6 +83,7 @@ public class RumahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "edit-rumah";
     }
 

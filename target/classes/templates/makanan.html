@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Makanan Khas</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="x_panel">
+        <div class="x_title">
+            <h2>Data Makanan</h2>
+            <ul class="nav navbar-right panel_toolbox">
+                <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+            <div class="table-responsive">
+                <table class="table table-striped jambo_table bulk_action"border="1">
+                    <thead>
+                    <tr class="headings">
+                        <th class="column-title">No </th>
+                        <th class="column-title">Nama Makanan </th>
+                        <th class="column-title">Tanggal Posting</th>
+                        <th class="column-title no-link last"><span class="nobr">Action</span>
+                        </th>
+                        <th class="bulk-actions" colspan="7">
+                            <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="makanan : ${tabelMakanan} "class="even pointer">
+                        <td class=" "> </td>
+                        <td th:text="${makanan.namamakanan}">May 23, 2014 11:47:56 PM </td>
+                        <td th:text="${makanan.createdate}">John Blank L</td>
+                        <td class=" last">
+                            <a th:href="@{'/makanan/edit/' + ${makanan.id}}" class="btn btn-info btn-xs"><i class="fa fa-pencil"></i> Edit </a>
+                            <a th:href="@{'/makanan/delete/' + ${makanan.id}}" class="btn btn-danger btn-xs"><i class="fa fa-trash-o"></i> Delete </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="x_panel">
+        <div class="x_content">
+            <a th:href="@{/makanan/add}" class="btn btn-primary">Tambah Makanan</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

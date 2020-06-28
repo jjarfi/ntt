@@ -44,6 +44,7 @@ public class SejarahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "sejarah";
     }
 
@@ -58,6 +59,7 @@ public class SejarahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "tambah-sejarah";
     }
 
@@ -81,6 +83,7 @@ public class SejarahController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "edit-sejarah";
     }
     @RequestMapping("/sejarah/delete/{id}")

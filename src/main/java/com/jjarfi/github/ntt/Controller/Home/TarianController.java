@@ -45,6 +45,7 @@ public class TarianController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "tarian";
     }
 
@@ -59,6 +60,7 @@ public class TarianController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "tambah-tarian";
     }
 
@@ -82,7 +84,7 @@ public class TarianController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
-
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "edit-tarian";
     }
 

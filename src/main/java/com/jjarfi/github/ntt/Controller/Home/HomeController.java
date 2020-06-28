@@ -48,6 +48,7 @@ public class HomeController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "beranda";
     }
 
@@ -60,6 +61,7 @@ public class HomeController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "tambah-suku";
     }
 

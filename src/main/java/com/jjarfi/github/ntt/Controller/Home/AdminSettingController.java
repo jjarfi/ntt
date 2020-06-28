@@ -46,6 +46,7 @@ public class AdminSettingController {
         modelMap.addAttribute("jumlahRumah", rumahService.getCount());
         modelMap.addAttribute("jumlahMakanan", makananService.getCount());
         modelMap.addAttribute("jumlahMusik", musikService.getCount());
+        modelMap.addAttribute("jumlahTarian", tarianService.getCount());
         return "profil";
     }
 
